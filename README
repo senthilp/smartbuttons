@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+ About
+-------------------------------------------------------------------------------
+
+SmartButton is a simple project which showcases various UI treatments for HTML
+buttons using CSS. Styles are used such that non-supporting browsers handle them
+gracefully. There is only one master file button.html which has al the CSS styles
+inline. Various buttons implemented (list will grow)
+1. Gradient buttons (buttons designed using CSS gradients)
