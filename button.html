@@ -3,8 +3,67 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Smart Buttons</title>
+	<style type="text/css">
+		body {
+			width: 960px;
+			margin: 0 auto;
+		}
+		h1 {
+			margin: 40px 0 30px;
+			color: gray;
+			text-align: center;
+		}
+		h2 {
+			margin: 5px 0;
+		}
+		.box {
+			border: 2px solid gray;
+			padding: 0 10px 10px;
+			border-radius: 7px;
+		} 
+		.custom {
+			width: 150px;
+		}
+		button {
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		button.large {
+			font: bold 18px Trebuchet MS;
+			line-height: 35px;
+		}		
+		button.ogradient {
+			color: white;
+			border: 1px solid #FFCC00;			
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+			background-color: #FFCC00; /* Old browsers */
+			background: -moz-linear-gradient(top, #FFCC00, #FF6600); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFCC00), color-stop(100%,#FF6600)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #FFCC00, #FF6600); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #FFCC00, #FF6600); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #FFCC00, #FF6600); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFCC00', endColorstr='#FF6600',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #FFCC00, #FF6600); /* W3C */								
+		}
+		button.ogradient:hover, button.ogradient:focus {
+			background-color: #FFDB4D; /* Old browsers */
+			background: -moz-linear-gradient(top, #FFDB4D, #FF944D); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFDB4D), color-stop(100%,#FF944D)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #FFDB4D, #FF944D); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #FFDB4D, #FF944D); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #FFDB4D, #FF944D); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFDB4D', endColorstr='#FF944D',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #FFDB4D, #FF944D); /* W3C */								
+		}
+	</style>	
 </head>
 <body>
-
+	<h1>Smart Buttons</h1>
+	<div id="gradient" class="box">
+		<h2>Gradients</h2>
+		<button type="button" class="large ogradient">Get Started</button>
+		<br/><br/>
+		<button type="button" class="large ogradient custom">Get Started</button>		
+	</div>
 </body>
 </html>
