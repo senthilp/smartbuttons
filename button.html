@@ -14,11 +14,21 @@
 			text-align: center;
 		}
 		h2 {
-			margin: 5px 0;
+			margin: 5px 0 15px;
+		}
+		.vspace {
+			margin-bottom: 25px;
+		}
+		.lalign {
+			float: left;
+			margin-right: 40px;
+		}
+		.clear {
+			clear: both;
 		}
 		.box {
 			border: 2px solid gray;
-			padding: 0 10px 10px;
+			padding: 0 10px 20px;
 			border-radius: 7px;
 		} 
 		.custom {
@@ -26,15 +36,20 @@
 		}
 		button {
 			border-radius: 4px;
+			border: 1px solid;
 			cursor: pointer;
+		}
+		button.small {
+			font: bold 14px Trebuchet MS;
+			line-height: 25px;
 		}
 		button.large {
 			font: bold 18px Trebuchet MS;
 			line-height: 35px;
 		}		
-		button.ogradient {
+		button.o-gradient {
 			color: white;
-			border: 1px solid #FFCC00;			
+			border-color: #FFCC00;		
 			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 			background-color: #FFCC00; /* Old browsers */
 			background: -moz-linear-gradient(top, #FFCC00, #FF6600); /* FF3.6+ */
@@ -45,7 +60,7 @@
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFCC00', endColorstr='#FF6600',GradientType=0 ); /* IE6-9 */
 			background: linear-gradient(top, #FFCC00, #FF6600); /* W3C */								
 		}
-		button.ogradient:hover, button.ogradient:focus {
+		button.o-gradient:hover, button.o-gradient:focus {
 			background-color: #FFDB4D; /* Old browsers */
 			background: -moz-linear-gradient(top, #FFDB4D, #FF944D); /* FF3.6+ */
 			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFDB4D), color-stop(100%,#FF944D)); /* Chrome,Safari4+ */
@@ -55,15 +70,95 @@
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFDB4D', endColorstr='#FF944D',GradientType=0 ); /* IE6-9 */
 			background: linear-gradient(top, #FFDB4D, #FF944D); /* W3C */								
 		}
+		button.g-gradient {
+			color: white;
+			border-color: #9ACB00;	
+			border-radius: 0;		
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+			background-color: #9ACB00; /* Old browsers */
+			background: -moz-linear-gradient(top, #9ACB00, #83AD00); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ACB00), color-stop(100%,#83AD00)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #9ACB00, #83AD00); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #9ACB00, #83AD00); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #9ACB00, #83AD00); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ACB00', endColorstr='#83AD00',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #9ACB00, #83AD00); /* W3C */								
+		}
+		button.g-gradient:hover, button.g-gradient:focus {
+			background-color: #BDDC63; /* Old browsers */
+			background: -moz-linear-gradient(top, #BDDC63, #8CB132); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#BDDC63), color-stop(100%,#8CB132)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #BDDC63, #8CB132); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #BDDC63, #8CB132); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #BDDC63, #8CB132); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BDDC63', endColorstr='#8CB132',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #BDDC63, #8CB132); /* W3C */								
+		}		
+		button.b-gradient {
+			color: white;
+			border-color: #6EBDE2;		
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+			background-color: #6EBDE2; /* Old browsers */
+			background: -moz-linear-gradient(top, #6EBDE2, #003DAD); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6EBDE2), color-stop(100%,#003DAD)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #6EBDE2, #003DAD); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #6EBDE2, #003DAD); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #6EBDE2, #003DAD); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6EBDE2', endColorstr='#003DAD',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #6EBDE2, #003DAD); /* W3C */								
+		}
+		button.b-gradient:hover, button.b-gradient:focus {
+			background-color: #75CDF7; /* Old browsers */
+			background: -moz-linear-gradient(top, #75CDF7, #003DAD); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#75CDF7), color-stop(100%,#003DAD)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #75CDF7, #003DAD); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #75CDF7, #003DAD); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #75CDF7, #003DAD); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75CDF7', endColorstr='#003DAD',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #75CDF7, #003DAD); /* W3C */								
+		}
+		button.gray-gradient {
+			color: #666;
+			border-color: #BBBBBB;					
+			background-color: #FFFFFF; /* Old browsers */
+			background: -moz-linear-gradient(top, #FFFFFF, #D7D7D7); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#D7D7D7)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #FFFFFF, #D7D7D7); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #FFFFFF, #D7D7D7); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #FFFFFF, #D7D7D7); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#D7D7D7',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #FFFFFF, #D7D7D7); /* W3C */								
+		}
+		button.gray-gradient:hover, button.gray-gradient:focus {
+			color: #002398;
+		}		
 	</style>	
 </head>
 <body>
 	<h1>Smart Buttons</h1>
 	<div id="gradient" class="box">
 		<h2>Gradients</h2>
-		<button type="button" class="large ogradient">Get Started</button>
-		<br/><br/>
-		<button type="button" class="large ogradient custom">Get Started</button>		
+		<div class="lalign">
+			<button type="button" class="large o-gradient">Get Started</button>
+			<div class="vspace"></div>
+			<button type="button" class="large o-gradient custom">Get Started</button>
+		</div>
+		<div class="lalign">
+			<button type="button" class="small g-gradient">Search</button>
+			<div class="vspace" style="padding-bottom:10px;"></div>
+			<button type="button" class="large g-gradient custom">Search</button>			
+		</div>
+		<div class="lalign">
+			<button type="button" class="large b-gradient">Buy It Now</button>
+			<div class="vspace"></div>
+			<button type="button" class="large b-gradient custom">Buy It Now</button>			
+		</div>
+		<div class="lalign">
+			<button type="button" class="large gray-gradient">Cancel</button>
+			<div class="vspace"></div>
+			<button type="button" class="large gray-gradient custom">Cancel</button>			
+		</div>					
+		<div class="clear"></div>		
 	</div>
 </body>
 </html>
