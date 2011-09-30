@@ -9,10 +9,23 @@
 			margin: 0 auto;
 		}
 		h1 {
-			margin: 40px 0 30px;
+			margin: 25px 7px 30px 300px;
 			color: gray;
 			text-align: center;
+			float: left;
 		}
+		.author {
+			background: url("http://i.ebayimg.com/00/s/MTA2MlgxNjAw/$%28KGrHqF,!l0E6B0qR%29twBOhkE1NVmw~~60_23.JPG") no-repeat -25px 1px;
+			float: left;
+			height: 50px;
+			width: 50px;
+			border: 3px solid yellow;
+			border-radius: 50%;
+			margin-top: 16px;
+		}
+		.signature {
+			font: italic 17px Sans MS;
+		}		
 		h2 {
 			margin: 5px 0 15px;
 		}
@@ -143,8 +156,13 @@
 	</style>	
 </head>
 <body>
-	<h1>Smart Buttons</h1>
-	<div id="gradient" class="box">
+	<div>
+		<h1>Smart Buttons 
+			<span class="signature">by</span>
+		</h1>
+		<a href="http://twitter.com/#!/senthil_hi" target="blank"><div class="author"></div></a>			
+	</div>
+	<div id="gradient" class="clear box">
 		<h2>Gradients</h2>
 		<div class="lalign">
 			<button type="button" class="small rect o-gradient">Get Started</button>
@@ -168,7 +186,7 @@
 		</div>					
 		<div class="clear"></div>		
 	</div>
-	<div id="oval" class="box" style="display:block;">
+	<div id="oval" class="box" style="margin-top:20px; display:block;">
 		<h2>Oval</h2>
 		<div class="lalign">
 			<button type="button" class="small oval o-gradient">Get Started</button>
