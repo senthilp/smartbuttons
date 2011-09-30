@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "_http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -30,14 +30,18 @@
 			border: 2px solid gray;
 			padding: 0 10px 20px;
 			border-radius: 7px;
+			margin-top: 10px;
 		} 
 		.custom {
 			width: 150px;
 		}
 		button {
+			cursor: pointer;
+			border: 1px solid;
+		}
+		button.rect {
 			border-radius: 4px;
 			border: 1px solid;
-			cursor: pointer;
 		}
 		button.small {
 			font: bold 14px Trebuchet MS;
@@ -131,7 +135,11 @@
 		}
 		button.gray-gradient:hover, button.gray-gradient:focus {
 			color: #002398;
-		}		
+		}	
+		button.oval {
+			border-radius: 50%;
+			line-height: 65px;						
+		}	
 	</style>	
 </head>
 <body>
@@ -139,26 +147,50 @@
 	<div id="gradient" class="box">
 		<h2>Gradients</h2>
 		<div class="lalign">
-			<button type="button" class="small o-gradient">Get Started</button>
+			<button type="button" class="small rect o-gradient">Get Started</button>
 			<div class="vspace"></div>
-			<button type="button" class="large o-gradient custom">Get Started</button>
+			<button type="button" class="large rect o-gradient custom">Get Started</button>
 		</div>
 		<div class="lalign">
-			<button type="button" class="small g-gradient">Search</button>
+			<button type="button" class="small rect g-gradient">Search</button>
 			<div class="vspace"></div>
-			<button type="button" class="large g-gradient custom">Search</button>			
+			<button type="button" class="large rect g-gradient custom">Search</button>			
 		</div>
 		<div class="lalign">
-			<button type="button" class="small b-gradient">Buy It Now</button>
+			<button type="button" class="small rect b-gradient">Buy It Now</button>
 			<div class="vspace"></div>
-			<button type="button" class="large b-gradient custom">Buy It Now</button>			
+			<button type="button" class="large rect b-gradient custom">Buy It Now</button>			
 		</div>
 		<div class="lalign">
-			<button type="button" class="small gray-gradient">Cancel</button>
+			<button type="button" class="small rect gray-gradient">Cancel</button>
 			<div class="vspace"></div>
-			<button type="button" class="large gray-gradient custom">Cancel</button>			
+			<button type="button" class="large rect gray-gradient custom">Cancel</button>			
 		</div>					
 		<div class="clear"></div>		
 	</div>
+	<div id="oval" class="box" style="display:block;">
+		<h2>Oval</h2>
+		<div class="lalign">
+			<button type="button" class="small oval o-gradient">Get Started</button>
+			<div class="vspace"></div>
+			<button type="button" class="large oval o-gradient custom">Get Started</button>
+		</div>
+		<div class="lalign">
+			<button type="button" class="small oval g-gradient">Search</button>
+			<div class="vspace"></div>
+			<button type="button" class="large oval g-gradient custom">Search</button>			
+		</div>
+		<div class="lalign">
+			<button type="button" class="small oval b-gradient">Buy It Now</button>
+			<div class="vspace"></div>
+			<button type="button" class="large oval b-gradient custom">Buy It Now</button>			
+		</div>
+		<div class="lalign">
+			<button type="button" class="small oval gray-gradient">Cancel</button>
+			<div class="vspace"></div>
+			<button type="button" class="large oval gray-gradient custom">Cancel</button>			
+		</div>					
+		<div class="clear"></div>		
+	</div>	
 </body>
 </html>
