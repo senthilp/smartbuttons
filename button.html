@@ -14,23 +14,28 @@
 			text-align: center;
 			float: left;
 		}
+		.wrapper {
+			position: relative;
+		}
 		.author {
-			background: url("http://i.ebayimg.com/00/s/MTA2MlgxNjAw/$%28KGrHqF,!l0E6B0qR%29twBOhkE1NVmw~~60_23.JPG") no-repeat -25px 1px;
+			background: url("http://i.ebayimg.com/00/s/MTA2MlgxNjAw/$%28KGrHqF,!l0E6B0qR%29twBOhkE1NVmw~~60_14.JPG") no-repeat -20px 1px;
+			position: absolute;
 			float: left;
-			height: 50px;
-			width: 50px;
+			height: 40px;
+			width: 40px;
 			border: 3px solid yellow;
 			border-radius: 50%;
-			margin-top: 16px;
+			left: 530px;
+			margin-top: 21px;
 		}
 		.author:hover {
-			background: url("http://i.ebayimg.com/00/s/MTA2MlgxNjAw/$%28KGrHqF,!l0E6B0qR%29twBOhkE1NVmw~~60_23.JPG") no-repeat -25px 1px;
+			background: url("http://i.ebayimg.com/00/s/MTA2MlgxNjAw/$%28KGrHqF,!l0E6B0qR%29twBOhkE1NVmw~~60_26.JPG") no-repeat -45px 1px;
 			float: left;
 			height: 80px;
 			width: 80px;
 			border: 3px solid yellow;
 			border-radius: 50%;
-			margin-top: 16px;
+			margin-top: 5px;
 		}		
 		.signature {
 			font: italic 17px Sans MS;
@@ -63,7 +68,6 @@
 		}
 		button.rect {
 			border-radius: 4px;
-			border: 1px solid;
 		}
 		button.small {
 			font: bold 14px Trebuchet MS;
@@ -158,6 +162,19 @@
 		button.gray-gradient:hover, button.gray-gradient:focus {
 			color: #002398;
 		}	
+		button.gray-disabled {
+			cursor: default;
+			color: #CCC;
+			border-color: #CCC;					
+			background-color: #FEFEFE; /* Old browsers */
+			background: -moz-linear-gradient(top, #FEFEFE, #F0F0F0); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#F0F0F0)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #FEFEFE, #F0F0F0); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #FEFEFE, #F0F0F0); /* Opera11.10+ */
+			background: -ms-linear-gradient(top, #FEFEFE, #F0F0F0); /* IE10+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEFEFE', endColorstr='#F0F0F0',GradientType=0 ); /* IE6-9 */
+			background: linear-gradient(top, #FEFEFE, #F0F0F0); /* W3C */											
+		}
 		button.oval {
 			border-radius: 50%;
 			line-height: 65px;						
@@ -169,7 +186,9 @@
 		<h1>Smart Buttons 
 			<span class="signature">by</span>
 		</h1>
-		<a href="http://twitter.com/#!/senthil_hi" target="blank"><div class="author"></div></a>			
+		<div class="wrapper">
+			<a href="http://twitter.com/#!/senthil_hi" target="blank"><div class="author"></div></a>
+		</div>			
 	</div>
 	<div id="gradient" class="clear box">
 		<h2>Gradients</h2>
@@ -192,11 +211,14 @@
 			<button type="button" class="small rect gray-gradient">Cancel</button>
 			<div class="vspace"></div>
 			<button type="button" class="large rect gray-gradient custom">Cancel</button>			
-		</div>					
+		</div>
+		<div class="lalign">
+			<button type="button" class="small rect gray-disabled" disabled="disabled">Disabled</button>
+		</div>								
 		<div class="clear"></div>		
 	</div>
 	<div id="oval" class="box" style="margin-top:20px; display:block;">
-		<h2>Oval </h2>
+		<h2>Oval</h2>
 		<div class="lalign">
 			<button type="button" class="small oval o-gradient">Get Started</button>
 			<div class="vspace"></div>
@@ -216,7 +238,10 @@
 			<button type="button" class="small oval gray-gradient">Cancel</button>
 			<div class="vspace"></div>
 			<button type="button" class="large oval gray-gradient custom">Cancel</button>			
-		</div>					
+		</div>		
+		<div class="lalign">
+			<button type="button" class="small oval gray-disabled" disabled="disabled">Disabled</button>
+		</div>													
 		<div class="clear"></div>		
 	</div>	
 </body>
